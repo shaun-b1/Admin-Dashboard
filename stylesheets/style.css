@@ -1,0 +1,100 @@
+:root {
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 4fr;
+}
+
+header {
+    background-color: blue;
+}
+
+aside {
+    justify-content: flex-start;
+    color: white;
+    padding: 12px;
+    background-color: rgb(29, 161, 242);
+    grid-area: 1 / 1 / 6 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.title {
+    display: flex;
+}
+
+.title>h1,
+.title>img {
+    flex: center;
+}
+
+.title>h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 1.7rem;
+}
+
+.title>img {
+    height: 44px;
+}
+
+aside>nav>ul>li {
+    font-size: 1.4rem;
+    height: 40px;
+    padding-left: 35px;
+    margin-left: 15px;
+}
+
+#home {
+    background: url('../assets/home.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+#profile {
+    background: url('../assets/card-account-details-outline.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+#messages {
+    background: url('../assets/message-reply.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+#history {
+    background: url('../assets/clock-time-three.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+#task {
+    background: url('../assets/note-multiple.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+#community {
+    background: url('../assets/account-group.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+#settings {
+    background: url('../assets/cog.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+#support {
+    background: url('../assets/help-box.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+#privacy {
+    background: url('../assets/shield-check.png') no-repeat left top;
+    background-size: 1.3rem;
+}
+
+.main-window {
+    background-color: green;
+    grid-area: 2 / 2 / 6 / 3;
+}
