@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title>Document</title>
@@ -17,25 +18,25 @@
             <div class="search-bar">
                 <form action="" method="">
                     <input class="search" type="search" name="search" id="search">
-                    <button type="submit"><img src="assets/magnify.png" alt="Search"></button>
+                    <button type="submit"><span class="mdi mdi-magnify"></span></button>
                 </form>
             </div>
             <div class="notification-bar">
-                <button type="button" id="notification-button"><img src="assets/bell-ring-outline.png" alt="Notification Button"></button>
+                <button type="button" id="notification-button"><span class="mdi mdi-bell-ring-outline"></span></button>
                 <img src="assets/cat.png" alt="Profile Image">
                 <h2>Shaun MacWilliam</h2>
             </div>
             <div class="profile">
                 <img src="assets/cat.png" alt="Profile Image">
                 <div class="name">
-                    <h3>Hi there,</h3>
-                    <h2>Shaun MacWilliam (@shaun-b1)</h2>
+                    <p>Hi there,</p>
+                    <h1>Shaun MacWilliam (@shaun-b1)</h1>
                 </div>
             </div>
             <div class="actions">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
             </div>
         </header>
         <aside>
@@ -45,19 +46,21 @@
             </div>
             <nav>
                 <ul>
-                    <li id="home">Home</li>
-                    <li id="profile">Profile</li>
-                    <li id="messages">Messages</li>
-                    <li id="history">History</li>
-                    <li id="task">Tasks</li>
-                    <li id="community">Community</li>
+                    <li class="mdi mdi-home"><a href="">Home</a></li>
+                    <li class="mdi mdi-card-account-details-outline"><a>Profile</a>
+                    </li>
+                    <li class="mdi mdi-message-reply"><a href="">Messages</a></li>
+                    <li class="mdi mdi-clock-time-three"><a href="">History</a></li>
+                    <li class="mdi mdi-note-multiple"><a href="">Tasks</a></li>
+                    <li class="mdi mdi-account-group"><a href="">Community</a>
+                    </li>
                 </ul>
             </nav>
             <nav>
                 <ul>
-                    <li id="settings">Settings</li>
-                    <li id="support">Support</li>
-                    <li id="privacy">Privacy</li>
+                    <li class="mdi mdi-cog"><a href="">Settings</a></li>
+                    <li class="mdi mdi-help-box"><a href="">Support</a></li>
+                    <li class="mdi mdi-shield-check"><a href="">Privacy</a></li>
                 </ul>
             </nav>
         </aside>
@@ -67,41 +70,71 @@
                 <div class="project-window">
                     <h2>Super Cool Project</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
+                    <div class="icons">
+                        <span class="mdi mdi-star-plus-outline"></span>
+                        <span class="mdi mdi-eye-plus-outline"></span>
+                        <span class="mdi mdi-source-fork"></span>
+                    </div>
                 </div>
                 <div class="project-window">
                     <h2>Less Cool Project</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
+                    <div class="icons">
+                        <span class="mdi mdi-star-plus-outline"></span>
+                        <span class="mdi mdi-eye-plus-outline"></span>
+                        <span class="mdi mdi-source-fork"></span>
+                    </div>
                 </div>
                 <div class="project-window">
                     <h2>Impossible App</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
+                    <div class="icons">
+                        <span class="mdi mdi-star-plus-outline"></span>
+                        <span class="mdi mdi-eye-plus-outline"></span>
+                        <span class="mdi mdi-source-fork"></span>
+                    </div>
                 </div>
                 <div class="project-window">
                     <h2>Easy Peasy App</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
+                    <div class="icons">
+                        <span class="mdi mdi-star-plus-outline"></span>
+                        <span class="mdi mdi-eye-plus-outline"></span>
+                        <span class="mdi mdi-source-fork"></span>
+                    </div>
                 </div>
                 <div class="project-window">
                     <h2>Ad Blocked</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
+                    <div class="icons">
+                        <span class="mdi mdi-star-plus-outline"></span>
+                        <span class="mdi mdi-eye-plus-outline"></span>
+                        <span class="mdi mdi-source-fork"></span>
+                    </div>
                 </div>
                 <div class="project-window">
                     <h2>Money Maker</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
+                    <div class="icons">
+                        <span class="mdi mdi-star-plus-outline"></span>
+                        <span class="mdi mdi-eye-plus-outline"></span>
+                        <span class="mdi mdi-source-fork"></span>
+                    </div>
                 </div>
             </div>
             <div class="side-panel">
                 <div class="announcements">
                     <h1>Announcements</h1>
                     <div class="announcement-box">
-                        <div class="announce1">
+                        <div class="announcebb">
                             <h2>Site Maintenance</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
                         </div>
-                        <div class="announce2">
+                        <div class="announcebb">
                             <h2>Community Share Day</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
                         </div>
-                        <div class="announce3">
+                        <div class="announce">
                             <h2>Updated Privacy Policy</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus non enim praesent elementum facilisis leo. Odio euismod lacinia at quis risus sed vulputate odio.</p>
                         </div>
@@ -110,14 +143,16 @@
                 <div class="trending">
                     <h1>Trending</h1>
                     <div class="trending-box">
-                        <div class="trending1"></div>
-                        <div class="trending2"></div>
-                        <div class="trending3"></div>
-                        <div class="trending4"></div>
+                        <div class="trend">Placeholder</div>
+                        <div class="trend">Placeholder</div>
+                        <div class="trend">Placeholder</div>
+                        <div class="trend">Placeholder</div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
     </div>
 
 </body>
