@@ -2,16 +2,127 @@
     font-family: sans-serif;
 }
 
+img[src="assets/cat.png"] {
+    padding: 7px;
+    border: none;
+    border-radius: 50%;
+    background-color: gold;
+}
+
 .container {
     display: grid;
     grid-template: repeat(5, 1fr) / 1fr 4fr;
 }
 
 header {
-    background-color: blue;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 45% 55%;
+    grid-template-columns: 3fr 2fr;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header button {
+    border: none;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin: 20px 0 15px 50px;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    border-radius: 15px;
+    margin-left: 8px;
+    padding-left: 15px;
+    padding-right: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+
+input[type=search]:focus {
+    outline: none;
+}
+
+form>button {
+    margin-top: 5px;
+}
+
+.notification-bar {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 20px 60px 15px 0;
+}
+
+.notification-bar>* {
+    margin: 0 10px 0;
+}
+
+.notification-bar>button {
+    height: 25px;
+    margin-top: 7px;
+}
+
+.notification-bar>img[src="assets/cat.png"] {
+    height: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+.notification-bar>h2 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+.profile>img[src="assets/cat.png"] {
+    height: 60px;
+}
+
+.name {
+    padding: 15px;
+    flex-direction: column;
+}
+
+.name>h2 {
+    padding-top: 7px;
+    font-size: 1.7rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.actions>button {
+    background-color: rgb(29, 161, 242);
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1rem;
+    height: 40px;
+    margin: 0 15px 0;
+    width: 100px;
 }
 
 aside {
+    position: relative;
     justify-content: flex-start;
     color: white;
     padding: 12px;
@@ -25,6 +136,8 @@ aside {
 
 .title {
     display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .title>h1,
@@ -43,7 +156,7 @@ aside {
 }
 
 aside>nav>ul>li {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     height: 40px;
     padding-left: 35px;
     margin-left: 15px;
@@ -95,6 +208,8 @@ aside>nav>ul>li {
 }
 
 .main-window {
-    background-color: green;
+    background-color: lightgray;
     grid-area: 2 / 2 / 6 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
